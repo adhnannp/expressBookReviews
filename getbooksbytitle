@@ -1,22 +1,4 @@
-Invoke-WebRequest -Method Get -Uri "http://localhost:5000/title/The%20Divine%20Comedy"
+curl "http://localhost:5000/books/title/The%20Divine%20Comedy"
 
 OUTPUT:
-
-StatusCode        : 200
-StatusDescription : OK
-Content           : [{"author":"Dante Alighieri","title":"The Divine Comedy","reviews":{}}]
-RawContent        : HTTP/1.1 200 OK
-                    Connection: keep-alive
-                    Keep-Alive: timeout=5
-                    Content-Length: 71
-                    Content-Type: application/json; charset=utf-8
-                    Date: Sun, 15 Mar 2026 12:20:10 GMT
-                    ETag: W/"47-udNNcjjlmVyNhrKuj/bm...
-Forms             : {}
-Headers           : {[Connection, keep-alive], [Keep-Alive, timeout=5], [Content-Length, 71], [Content-Type, 
-                    application/json; charset=utf-8]...}
-Images            : {}
-InputFields       : {}
-Links             : {}
-ParsedHtml        : System.__ComObject
-RawContentLength  : 71
+[{"author":"Dante Alighieri","title":"The Divine Comedy","reviews":{}}]

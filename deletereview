@@ -1,5 +1,4 @@
-curl.exe -X DELETE -b cookies.txt http://localhost:5000/customer/auth/review/1
+curl -X DELETE http://localhost:5000/customer/auth/review/1
 
-OUTPUT: 
-
-Reviews for the ISBN 1 posted by the user user3 deleted.
+OUTPUT:
+Reviews for the ISBN 1 posted by the user user2 deleted.

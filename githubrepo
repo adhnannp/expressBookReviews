@@ -1,23 +1,5 @@
-curl https://api.github.com/repos/adhnannp/expressBookReviews
+curl https://api.github.com/repos/adhnannp/expressBookReviews | jq '.fork, .parent.full_name'
 
 OUTPUT:
-StatusCode        : 200
-StatusDescription : OK
-Content           : {"id":1182333030,"node_id":"R_kgDORnj4Zg","name":"expressBookReviews","full_name":"adhnannp/expressBook
-                    Reviews","private":false,"owner":{"login":"adhnannp","id":172052186,"node_id":"U_kgDOCkFO2g","ava...    
-RawContent        : HTTP/1.1 200 OK
-                    Vary: Accept,Accept-Encoding, Accept, X-Requested-With
-                    X-GitHub-Media-Type: github.v3; format=json
-                    x-github-api-version-selected: 2022-11-28
-                    Access-Control-Expose-Headers: ETag, Li...
-Forms             : {}
-Headers           : {[Vary, Accept,Accept-Encoding, Accept, X-Requested-With], [X-GitHub-Media-Type, github.v3;
-                    format=json], [x-github-api-version-selected, 2022-11-28], [Access-Control-Expose-Headers, ETag, Link,  
-                    Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used,        
-                    X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval,      
-                    X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset]...}
-Images            : {}
-InputFields       : {}
-Links             : {}
-ParsedHtml        : System.__ComObject
-RawContentLength  : 18884
+true
+"ibm-developer-skills-network/expressBookReview"

@@ -1,0 +1,22 @@
+Invoke-WebRequest -Method Post -Uri "http://localhost:5000/register" -ContentType "application/json" -Body '{"username":"user2", "password":"password1"}'
+
+OUTPUT:
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : {"message":"User successfully registred. Now you can login"}
+RawContent        : HTTP/1.1 200 OK
+                    Connection: keep-alive
+                    Keep-Alive: timeout=5
+                    Content-Length: 60
+                    Content-Type: application/json; charset=utf-8
+                    Date: Sun, 15 Mar 2026 12:11:36 GMT
+                    ETag: W/"3c-qzVto5CgoVHOYjomNs4f...
+Forms             : {}
+Headers           : {[Connection, keep-alive], [Keep-Alive, timeout=5], [Content-Length, 60], [Content-Type, 
+                    application/json; charset=utf-8]...}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : System.__ComObject
+RawContentLength  : 60

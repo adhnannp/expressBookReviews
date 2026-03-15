@@ -34,6 +34,7 @@ public_users.get('/', async function (req, res) {
 // Get book details based on ISBN
 public_users.get('/isbn/:isbn', async function (req, res) {
   try {
+    // Extract ISBN from the request parameters and fetch the book details from our books microservice
     const isbn = req.params.isbn;
     const response = await axios.get(`http://localhost:5000/books/isbn/${isbn}`);
     return res.status(200).json(response.data);
@@ -56,6 +57,7 @@ public_users.get('/author/:author', async function (req, res) {
 // Get all books based on title
 public_users.get('/title/:title', async function (req, res) {
   try {
+    // Extract title from the request parameters and fetch matching books from our books microservice
     const title = req.params.title;
     const response = await axios.get(`http://localhost:5000/books/title/${title}`);
     return res.status(200).json(response.data);

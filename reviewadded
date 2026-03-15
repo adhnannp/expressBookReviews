@@ -1,6 +1,5 @@
-curl -X PUT http://localhost:5000/customer/auth/review/1 \
--H "Content-Type: application/json" \
--d '{"review":"Great Book"}'
+curl -X PUT http://localhost:5000/customer/auth/review/1 -H "Content-Type: application/json" -d '{"review":"Great Book"}'
 
 OUTPUT:
-The review for the book with ISBN 1 has been added/updated.
+
+{"message": "The review for the book with ISBN 1 has been added/updated.", "reviews": {"user2": "Great Book"}}

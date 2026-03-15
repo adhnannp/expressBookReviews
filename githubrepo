@@ -1,5 +1,6 @@
 curl https://api.github.com/repos/adhnannp/expressBookReviews | jq '.fork, .parent.full_name'
 
 OUTPUT:
+
 true
-"ibm-developer-skills-network/expressBookReview"
+"ibm-developer-skills-network/expressBookReviews"

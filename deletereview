@@ -1,4 +1,5 @@
 curl -X DELETE http://localhost:5000/customer/auth/review/1
 
 OUTPUT:
-Reviews for the ISBN 1 posted by the user user2 deleted.
+
+{"message": "Reviews for the ISBN 1 posted by the user user2 deleted."}
